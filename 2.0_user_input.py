@@ -26,16 +26,14 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:name and age of user
-# 2. Process:adding my name and age in a sentence
-# 3. Out:my name and age 
-# 4. My two fields, and what I would do with them: i just got my name and age and then printed in a sentence
+# 1. In:nationality and code postal
+# 2. Process:adding nationality and code postal in a sentence
+# 3. Out:nationality and code postal
+# 4. My two fields, and what I would do with them: i just got nationality and code postal and then printed in a sentence
 
 
 # Your code below
-name = input("Enter your name: ")
-age = input("Enter your age: ")
-print("My name is ", name)
-print("My age is ", age)
+first = input("Enter your nationality here: ")  # TODO: replace the prompt string
+second = input("Enter your code postal here: ")  # TODO: replace the prompt string
+print("your nationality is:", first, "and your code postal is:", second)
 
-print("My name is " + name + "and my age is " + age)
