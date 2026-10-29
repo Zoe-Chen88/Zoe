@@ -138,3 +138,134 @@ print("You typed:", first, "and", second)
 ```
 
 Which punctuation character separates the two arguments in the last `print`?
+
+---
+## 2026-10-29 21:13, in .
+
+**Me:** hpw to do an addition
+
+**Tutor:**
+
+Adding two numbers entered by the user.
+
+```python
+a = float(input("Enter first number: "))   # TODO: change the prompt
+b = float(input("Enter second number: "))  # TODO: change the prompt
+result = a + b
+print("Sum:", result)
+```
+
+Which operator performs the addition?
+
+---
+## 2026-10-29 21:14, in .
+
+**Me:** how to do a substrat
+
+**Tutor:**
+
+Subtracting two numbers entered by the user.
+
+```python
+a = float(input("Enter first number: "))   # TODO: change the prompt
+b = float(input("Enter second number: "))  # TODO: change the prompt
+result = a - b
+print("Difference:", result)
+```
+
+Which operator performs the subtraction?
+
+---
+## 2026-10-29 21:14, in .
+
+**Me:** how to multiply
+
+**Tutor:**
+
+Multiplying two numbers entered by the user.
+
+```python
+a = float(input("Enter first number: "))   # TODO: change the prompt
+b = float(input("Enter second number: "))  # TODO: change the prompt
+result = a * b
+print("Product:", result)
+```
+
+Which operator performs the multiplication?
+
+---
+## 2026-10-29 21:14, in .
+
+**Me:** how to divide
+
+**Tutor:**
+
+Dividing two numbers entered by the user.
+
+```python
+a = float(input("Enter first number: "))   # TODO: change the prompt
+b = float(input("Enter second number: "))  # TODO: change the prompt
+result = a / b
+print("Quotient:", result)
+```
+
+Which operator performs the division?
+
+---
+## 2026-10-29 21:14, in .
+
+**Me:** how to make a choice based on a number
+
+**Tutor:**
+
+Making a decision with an `if-elif-else` chain.
+
+```python
+score = int(input("Enter your score (0-100): "))  # TODO: change the prompt
+
+if score >= 80:
+    print("Excellent")
+elif score >= 50:
+    print("Pass")
+else:
+    print("Fail")
+```
+
+Which keyword starts the first condition?
+
+---
+## 2026-10-29 21:21, in .
+
+**Me:** how to make a if on a 0
+
+**Tutor:**
+
+Checking whether a number equals zero.
+
+```python
+value = int(input("Enter a number: "))  # TODO: change the prompt
+
+if value == 0:
+    print("The number is zero")
+else:
+    print("The number is not zero")
+```
+
+Which operator tests equality?
+
+---
+## 2026-10-29 21:23, in .
+
+**Me:** how to transform a input into a number
+
+**Tutor:**
+
+Converting a text input into an integer.
+
+```python
+text = input("Enter a whole number: ")   # TODO: change the prompt
+number = int(text)
+print("You entered the number:", number)
+```
+
+Which function converts a string into an integer?
