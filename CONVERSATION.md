@@ -269,3 +269,28 @@ print("You entered the number:", number)
 ```
 
 Which function converts a string into an integer?
+
+---
+## 2026-10-29 21:44, in .
+
+**Me:** what are the four transformed ways of a sentence(upper,title,strip,len)?
+
+**Tutor:**
+
+Four string transformations.
+
+```python
+sentence = input("Enter a sentence: ")   # TODO: change the prompt
+
+upper_sentence = sentence.upper()        # TODO: keep upper()
+title_sentence = sentence.title()        # TODO: keep title()
+stripped_sentence = sentence.strip()      # TODO: keep strip()
+length = len(sentence)                   # TODO: keep len()
+
+print("Upper:", upper_sentence)
+print("Title:", title_sentence)
+print("Stripped:", stripped_sentence)
+print("Length:", length)
+```
+
+Which function returns the number of characters?
