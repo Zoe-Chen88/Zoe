@@ -294,3 +294,117 @@ print("Length:", length)
 ```
 
 Which function returns the number of characters?
+
+---
+## 2026-10-29 22:36, in .
+
+**Me:** how do I ask the user for a whold number?
+
+**Tutor:**
+
+Asking for a whole number and converting it.
+
+```python
+whole = int(input("Enter a whole number: "))  # TODO: change the prompt
+print("You entered:", whole)
+```
+
+Which function converts the input string to an integer?
+
+---
+## 2026-10-29 22:39, in .
+
+**Me:** how do I loop over every number from 1 to this number with range?
+
+**Tutor:**
+
+Looping from 1 up to a user-supplied number.
+
+```python
+n = int(input("Enter a positive integer: "))  # TODO: change the prompt
+for i in range(1, n + 1):                     # TODO: keep n + 1
+    print(i)
+```
+
+What value must the stop argument of `range` be to include the number the user typed?
+
+---
+## 2026-10-29 22:41, in .
+
+**Me:** how do I check if this number is odd or even?
+
+**Tutor:**
+
+Deciding whether a number is odd or even.
+
+```python
+n = int(input("Enter a whole number: "))  # TODO: change the prompt
+
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+```
+
+Which operator computes the remainder?
+
+---
+## 2026-10-29 22:49, in .
+
+**Me:** how do I print a message and stop if the number is 0 or negative?
+
+**Tutor:**
+
+Early exit when the number is zero or negative.
+
+```python
+n = int(input("Enter a positive number: "))  # TODO: change the prompt
+
+if n <= 0:
+    print("Stop: number is zero or negative")
+else:
+    print("Continue with", n)
+```
+
+Which keyword stops the rest of the block from running?
+
+---
+## 2026-10-29 22:55, in .
+
+**Me:** n % 2 == 0 can check if the number is even? are you sure it is correct?
+
+**Tutor:**
+
+Yes, `n % 2 == 0` is correct for checking even numbers.
+
+```python
+n = int(input("Enter a whole number: "))  # TODO: change the prompt
+
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+```
+
+Which operator gives the remainder of division by 2?
+
+---
+## 2026-10-29 23:05, in .
+
+**Me:** how do I stop the programme if the number is bigger than 20?
+
+**Tutor:**
+
+Exiting the program when the number exceeds 20.
+
+```python
+n = int(input("Enter a number: "))  # TODO: change the prompt
+
+if n > 20:
+    print("Stop: number is too large")
+    exit()                         # TODO: keep exit()
+else:
+    print("Continue with", n)
+```
+
+Which built-in function terminates the program immediately?
