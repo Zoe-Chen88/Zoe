@@ -1079,3 +1079,128 @@ for idx, price in enumerate(prices):
 ```
 
 What character controls the number of decimal places in the price?
+
+---
+## 2026-10-30 19:18, in .
+
+**Me:** how do I write a while loop that keeps asking the user until they answer yes, with a maximum of 3 attempts?
+
+**Tutor:**
+
+Looping until a condition is met.
+
+```python
+attempts = 0
+max_attempts = 3
+
+# TODO: write a while loop that asks "Continue? (yes/no)" and stops after 3 tries
+while attempts < max_attempts:
+    answer = input("Continue? (yes/no): ").strip().lower()
+    if answer == "yes":
+        print("Proceeding...")
+        break
+    attempts += 1
+else:
+    print("Maximum attempts reached.")
+```
+
+Which operator compares the attempt count to the limit?
+
+---
+## 2026-10-30 19:21, in .
+
+**Me:** <
+
+**Tutor:**
+
+Looping until a condition is met.
+
+```python
+attempts = 0
+max_attempts = 3
+
+# TODO: write a while loop that asks "Continue? (yes/no)" and stops after 3 tries
+while attempts # TODO: write the comparison :
+    answer = input("Continue? (yes/no): ").strip().lower()
+    if answer == "yes":
+        print("Proceeding...")
+        break
+    attempts += 1
+else:
+    print("Maximum attempts reached.")
+```
+
+What statement exits the loop early when the user answers “yes”?
+
+---
+## 2026-10-30 19:24, in .
+
+**Me:** how do I save every answer in a list during my while loop and print a summary after the loop?
+
+**Tutor:**
+
+Storing loop results in a list.
+
+```python
+answers = []
+
+attempts = 0
+max_attempts = 3
+
+while attempts < max_attempts:
+    answer = input("Continue? (yes/no): ").strip().lower()
+    answers.append(answer)  # TODO: store the answer
+    if answer == "yes":
+        print("Proceeding...")
+        break
+    attempts += 1
+else:
+    print("Maximum attempts reached.")
+
+# TODO: print the summary list
+print("Summary:", answers)
+```
+
+Which list method adds a new element at the end?
+
+---
+## 2026-10-30 19:31, in .
+
+**Me:** after my while loop, how do I print the number of answers and whether "yes" is in my answers list?
+
+**Tutor:**
+
+Counting and checking list contents.
+
+```python
+answers = ["yes", "no", "no"]
+
+# TODO: print the total number of answers
+print("Total answers:", # TODO: call the correct function)
+
+# TODO: print whether "yes" is in the list
+print('Contains "yes":', # TODO: write the membership test)
+```
+
+Which operator checks membership in a list?
+
+---
+## 2026-10-30 19:33, in .
+
+**Me:** in
+
+**Tutor:**
+
+Counting and checking list contents.
+
+```python
+answers = ["yes", "no", "no"]
+
+# TODO: print the total number of answers
+print("Total answers:", len(answers))
+
+# TODO: print whether "yes" is in the list
+print('Contains "yes":', "yes" in answers)
+```
+
+What does the expression `"yes" in answers` evaluate to?
