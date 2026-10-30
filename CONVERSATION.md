@@ -408,3 +408,145 @@ else:
 ```
 
 Which built-in function terminates the program immediately?
+
+---
+## 2026-10-30 15:39, in .
+
+**Me:** how do I create a list of 8 prices?
+
+**Tutor:**
+
+Creating a list of prices.
+
+```python
+# TODO: create a list called prices with 8 prices
+prices = [12.99, 8.50, 23.75, 5.00, 15.20, 9.99, 4.50, 18.30]
+```
+
+What built-in Python function returns the number of items in a list?
+
+---
+## 2026-10-30 15:43, in .
+
+**Me:** len()
+
+**Tutor:**
+
+Counting the items in a list.
+
+```python
+# TODO: assign the length of prices to a variable called count
+count = len(prices)
+```
+
+Which argument does the len() function take?
+
+---
+## 2026-10-30 15:44, in .
+
+**Me:** how do I print the whole list?
+
+**Tutor:**
+
+Printing a list.
+
+```python
+# TODO: print the entire list called prices
+print(prices)
+```
+
+What function do you use to display the contents of a list?
+
+---
+## 2026-10-30 15:45, in .
+
+**Me:** how do I get one item from a list by its position?
+
+**Tutor:**
+
+Accessing a list item by index.
+
+```python
+# TODO: get the 4th item from prices and store it in a variable called item
+item = prices[3]
+```
+
+Which index number gives the first element of a list?
+
+---
+## 2026-10-30 15:47, in .
+
+**Me:** 0
+
+**Tutor:**
+
+Correct: the first element is at index 0.
+
+Now you know how to create a list, count its items, print it, and pick one item by its index.
+Use these four steps whenever you need to work with lists of prices or any other data.
+
+---
+## 2026-10-30 15:51, in .
+
+**Me:** how do I sort a list from smallest to largest?
+
+**Tutor:**
+
+Sorting a list in ascending order.
+
+```python
+# TODO: sort the list called prices in place (smallest first)
+prices.sort()
+```
+
+Which method sorts the list in ascending order?
+
+---
+## 2026-10-30 15:52, in .
+
+**Me:** sort()
+
+**Tutor:**
+
+Correct: the method is `sort()`.
+
+```python
+# TODO: create a new sorted list called sorted_prices without changing prices
+sorted_prices = sorted(prices)
+```
+
+Which function returns a new sorted list instead of changing the original?
+
+---
+## 2026-10-30 15:53, in .
+
+**Me:** how do I compute the average of a list of numbers?
+
+**Tutor:**
+
+Computing the average of a list.
+
+```python
+# TODO: compute the average of the list prices and store it in avg
+total = sum(prices)
+count = len(prices)
+avg = total / count
+```
+
+Which built-in function gives the sum of all items in a list?
+
+---
+## 2026-10-30 15:55, in .
+
+**Me:** sum()
+
+**Tutor:**
+
+Correct: the function is `sum()`.
+
+```python
+# TODO: compute the average of prices in one line
+avg = sum(prices) / len(prices)
+```
+
+Which two built-in functions are used in this one-line average calculation?
