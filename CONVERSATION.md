@@ -550,3 +550,135 @@ avg = sum(prices) / len(prices)
 ```
 
 Which two built-in functions are used in this one-line average calculation?
+
+---
+## 2026-10-30 16:20, in .
+
+**Me:** how do I get a sorted copy of a list without changing the original?
+
+**Tutor:**
+
+Making a sorted copy without altering the original.
+
+```python
+# TODO: create a sorted copy of prices called sorted_prices
+sorted_prices = sorted(prices)
+```
+
+What argument does the sorted() function take?
+
+---
+## 2026-10-30 16:22, in .
+
+**Me:** the list to sort, prices
+
+**Tutor:**
+
+Exactly: sorted() takes the list you want to sort—in this case, prices.
+
+```python
+# TODO: print the original list to confirm it is unchanged
+print(prices)
+```
+
+Which function keeps the original list intact while returning a new sorted list?
+
+---
+## 2026-10-30 16:23, in .
+
+**Me:** how do I get a sorted copy of a list from largest to smallest?
+
+**Tutor:**
+
+Sorting a list in descending order.
+
+```python
+# TODO: create a sorted copy of prices called descending_prices (largest first)
+descending_prices = sorted(prices, reverse=True)
+```
+
+Which keyword argument controls the sort order in sorted()?
+
+---
+## 2026-10-30 16:25, in .
+
+**Me:** reverse
+
+**Tutor:**
+
+Correct: the keyword argument is `reverse`.
+
+```python
+# TODO: sort prices in place from largest to smallest
+prices.sort(reverse=True)
+```
+
+Which method sorts the list in descending order without creating a new list?
+
+---
+## 2026-10-30 16:26, in .
+
+**Me:** how do I reverse a list without changing the original?
+
+**Tutor:**
+
+Reversing a list without altering the original.
+
+```python
+# TODO: create a reversed copy of prices called reversed_prices
+reversed_prices = prices[::-1]
+```
+
+Which slicing notation reverses a list?
+
+---
+## 2026-10-30 16:27, in .
+
+**Me:** [::-1]
+
+**Tutor:**
+
+Correct: the slice `[::-1]` reverses a list.
+
+```python
+# TODO: reverse the list called prices in place
+prices.reverse()
+```
+
+Which method reverses the list in place?
+
+---
+## 2026-10-30 16:28, in .
+
+**Me:** how do I shuffle a copy of a list without changing the original?
+
+**Tutor:**
+
+Shuffling a list without altering the original.
+
+```python
+import random
+
+# TODO: create a shuffled copy of prices called shuffled_prices
+shuffled_prices = random.sample(prices, len(prices))
+```
+
+Which function from the random module shuffles a list while preserving the original?
+
+---
+## 2026-10-30 16:30, in .
+
+**Me:** ramdom.sample()
+
+**Tutor:**
+
+Almost—it’s `random.sample()`, but you wrote it with a typo.
+
+```python
+import random
+
+# TODO: shuffle the list called prices in place
+random.shuffle(prices)
+```
+
+Which function shuffles the list in place?
