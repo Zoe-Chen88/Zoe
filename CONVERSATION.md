@@ -922,3 +922,160 @@ for # TODO: write the loop header
 ```
 
 Which method returns the keys of a dictionary for iteration?
+
+---
+## 2026-10-30 18:51, in .
+
+**Me:** how do I loop over a list and get both the position and the item?
+
+**Tutor:**
+
+Enumerating a list.
+
+```python
+products = ["Headphones", "Keyboard", "Mouse"]
+
+# TODO: loop and print the index and the product name
+for # TODO: write the loop header
+    print(# TODO: print index and product)
+```
+
+Which built-in function provides both the index and the item?
+
+---
+## 2026-10-30 18:55, in .
+
+**Me:** enumerate()
+
+**Tutor:**
+
+Looping with index and value.
+
+```python
+products = ["Headphones", "Keyboard", "Mouse"]
+
+# TODO: loop and print the index and the product name
+for idx, name in enumerate(products):
+    print(f"{idx}: {name}")
+```
+
+What does enumerate() return at each step?
+
+---
+## 2026-10-30 18:55, in .
+
+**Me:** the position and the item
+
+**Tutor:**
+
+Looping with index and value.
+
+```python
+products = ["Headphones", "Keyboard", "Mouse"]
+
+# TODO: loop and print only the product names
+for # TODO: write the loop header
+    print(# TODO: print the name)
+```
+
+Which variable in the loop header holds the product name?
+
+---
+## 2026-10-30 18:58, in .
+
+**Me:** how do I compute the average of my prices list before the loop?
+
+**Tutor:**
+
+Computing an average.
+
+```python
+prices = [99.99, 49.99, 29.99]
+
+# TODO: compute the average price
+average = sum(prices) / # TODO: write the divisor
+```
+
+Which built-in function returns the number of items in the list?
+
+---
+## 2026-10-30 19:00, in .
+
+**Me:** len()
+
+**Tutor:**
+
+Computing an average.
+
+```python
+prices = [99.99, 49.99, 29.99]
+
+# TODO: compute the average price
+average = sum(prices) / len(prices)
+```
+
+What does len() return for an empty list?
+
+---
+## 2026-10-30 19:01, in .
+
+**Me:** inside my loop, how do I check if each price is above or below the average?
+
+**Tutor:**
+
+Comparing each price to the average.
+
+```python
+prices = [99.99, 49.99, 29.99]
+average = sum(prices) / len(prices)
+
+# TODO: loop and print whether each price is above or below average
+for price in prices:
+    if # TODO: write the condition
+        print(f"{price} is above average")
+    else:
+        print(f"{price} is below average")
+```
+
+Which comparison operator tests “greater than”?
+
+---
+## 2026-10-30 19:04, in .
+
+**Me:** inside my enumerate loop, how do I print the position, the price, and if it is above or below the average in one line?
+
+**Tutor:**
+
+Formatting a single-line output.
+
+```python
+prices = [99.99, 49.99, 29.99]
+average = sum(prices) / len(prices)
+
+# TODO: loop with enumerate and print position, price, and status
+for idx, price in enumerate(prices):
+    status = "above" if price > average else "below"
+    print(f"{idx} {price} is {status} average")
+```
+
+Which f-string placeholder shows the index?
+
+---
+## 2026-10-30 19:07, in .
+
+**Me:** {idx}
+
+**Tutor:**
+
+Formatting a single-line output.
+
+```python
+prices = [99.99, 49.99, 29.99]
+average = sum(prices) / len(prices)
+
+# TODO: loop with enumerate and print position, price, and status
+for idx, price in enumerate(prices):
+    print(f"#{idx} {price:.2f} {'above' if price > average else 'below'} average")
+```
+
+What character controls the number of decimal places in the price?
