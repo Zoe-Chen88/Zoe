@@ -1741,3 +1741,31 @@ def show_cheaper_products(prices):
 ```
 
 Which function decides whether a price is below the average?
+
+---
+## 2026-11-03 18:33, in .
+
+**Me:** how do I get today's date as text?
+
+**Tutor:**
+
+Getting today’s date as text.
+
+```python
+from datetime import date
+
+def today_text():
+    today = date.today()
+    return today.strftime("%Y-%m-%d")
+```
+
+What method formats a date object into a string?
+
+---
+## 2026-11-03 18:41, in .
+
+**Me:** striftime()
+
+**Tutor:**
+
+OFF

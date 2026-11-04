@@ -29,30 +29,50 @@ DELIVERABLE
     This file, plus the CSV your program produced.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out, file name and columns:
+# 1. In:the information typed by the user for one order:
+# the customer name, the product, and the quantity
+# 2. Process:the program checks that the quantity is a whole number
+# above 0, adds today's date, and adds the order as a new line
+# at the end of the file (it never overwrites the old orders)
+# 3. Out, file name and columns:one new line in the file orders.csv
+# Columns: customer_name, product, quantity, date
 # 4. Why these columns, and what this file is for:
-
+# I chose these columns because a store needs to know who ordered,
+# what, how many, and when. With 200 rows, I could find the best-selling
+# product, the busiest days, and the customers who order the most, to plan stock and promotions.
 
 # Your code below
 import os
 import csv
+from datetime import date
 
-item = input("Enter item name: ")
+def today_text():
+    today = date.today()
+    return today.strftime("%Y-%m-%d")
+
+customer_name = input("Enter the customer name: ")
+product = input("Enter the product:")
 
 while True:
     try:
-        price = float(input("Enter price: "))
-        break
+        quantity = int(input("Enter the quantity: "))
+        if quantity>0:
+            break
+        print("The quantity must be above 0.")
     except ValueError:
-        print("Please enter a valid number.")
-        
-file_exists = os.path.exists("price.csv")
+        print("Please enter a whole number.")
 
-with open("price.csv", "a", newline="") as f:
+today=today_text()
+file_exists = os.path.exists("orders.csv")
+
+with open("orders.csv", "a", newline="") as f:
     writer = csv.writer(f)
     if not file_exists:
-        writer.writerow(["Item", "Price"])
-    writer.writerow([item, price])
+        writer.writerow(["customer_name", "product", "quantity", "date"])
+    writer.writerow([customer_name, product, quantity, today])
+python 7.0_standard_io_file_output.py
 
+# Test: I ran the program 3 times with different orders.
+# orders.csv has 1 header line and 3 entries: the file is not overwritten
+# and the header is written only once.
+# When I typed "abc" or "-2" as quantity, the program asked again.
